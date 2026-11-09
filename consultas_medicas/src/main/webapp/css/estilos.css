@@ -1,0 +1,53 @@
+/* Colores propios de la aplicación (reemplazan el azul por defecto de Bootstrap) */
+:root {
+	--color-principal: #0f766e;
+	--color-principal-oscuro: #115e59;
+	--color-principal-mas-oscuro: #134e4a;
+	--color-secundario: #0d9488;
+}
+
+/* Barra de navegación */
+.bg-primary {
+	background-color: var(--color-principal) !important;
+}
+
+/* Botón principal */
+.btn-primary {
+	--bs-btn-bg: var(--color-principal);
+	--bs-btn-border-color: var(--color-principal);
+	--bs-btn-hover-bg: var(--color-principal-oscuro);
+	--bs-btn-hover-border-color: var(--color-principal-oscuro);
+	--bs-btn-active-bg: var(--color-principal-mas-oscuro);
+	--bs-btn-active-border-color: var(--color-principal-mas-oscuro);
+	--bs-btn-disabled-bg: var(--color-principal);
+	--bs-btn-disabled-border-color: var(--color-principal);
+	--bs-btn-focus-shadow-rgb: 15, 118, 110;
+}
+
+/* Botones de "Nuevo" y "Asignar" */
+.btn-success {
+	--bs-btn-bg: var(--color-secundario);
+	--bs-btn-border-color: var(--color-secundario);
+	--bs-btn-hover-bg: var(--color-principal);
+	--bs-btn-hover-border-color: var(--color-principal);
+	--bs-btn-active-bg: var(--color-principal-oscuro);
+	--bs-btn-active-border-color: var(--color-principal-oscuro);
+	--bs-btn-focus-shadow-rgb: 13, 148, 136;
+}
+
+/* Encabezado de las tablas */
+.table-dark {
+	--bs-table-bg: var(--color-principal-mas-oscuro);
+	--bs-table-border-color: var(--color-principal-oscuro);
+}
+
+/* Campos del formulario al seleccionarlos */
+.form-control:focus,
+.form-select:focus {
+	border-color: var(--color-secundario);
+	box-shadow: 0 0 0 0.25rem rgba(13, 148, 136, 0.25);
+}
+
+a {
+	color: var(--color-principal);
+}
